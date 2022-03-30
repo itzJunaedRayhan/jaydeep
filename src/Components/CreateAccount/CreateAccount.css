@@ -1,0 +1,248 @@
+.createAccountWrapper {
+    background-color: #282828;
+    min-height: 100vh;
+    width: 100vw;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.createAccountWrapper input,
+.createAccountWrapper select,
+.createAccountWrapper button {
+    font-family: "Muli-Regular";
+    color: rgb(201, 195, 195);
+    font-size: 13px;
+}
+
+.createAccountWrapper .Contact-Wrapper {
+    max-width: 600px;
+    height: 600px;
+    font-family: "Muli-Regular";
+    color: #666;
+    font-size: 13px;
+    margin: 0 auto;
+}
+
+.createAccountWrapper .Contact-Wrapper h3 {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: "Muli-Bold";
+    text-align: center;
+    margin-bottom: 32px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.createAccountWrapper form {
+    width: 100%;
+    padding: 25px 40px;
+    box-shadow: inset 10px 7px 7px #050505, inset -3px -3px 10px 3px #070707a6;
+}
+
+.createAccountWrapper .form-wrapper {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.createAccountWrapper .form-wrapper label {
+    margin-bottom: 2px;
+    display: block;
+}
+
+.createAccountWrapper .form-wrapper {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.createAccountWrapper .form-control {
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 20px;
+    font-family: "Muli-Bold";
+    background: none;
+    font-size: 16px;
+}
+
+.createAccountWrapper .form-control::placeholder {
+    font-size: 16px;
+}
+
+.createAccountWrapper .form-control:focus {
+    border: 1px solid tomato;
+    outline: none;
+    background-color: transparent;
+}
+
+.createAccountWrapper select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.createAccountWrapper select option[value=""][disabled] {
+    display: none;
+}
+
+.createAccountWrapper button {
+    border: none;
+    width: 152px;
+    height: 40px;
+    margin: 10px auto;
+    margin-top: 29px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: #ff6600;
+    font-size: 13px;
+    color: rgb(5, 5, 5);
+    text-transform: uppercase;
+    font-family: "Muli-SemiBold";
+    border-radius: 20px;
+    overflow: hidden;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    font-weight: bold;
+}
+
+.createAccountWrapper button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.createAccountWrapper button:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+.createAccountWrapper .checkbox {
+    position: relative;
+}
+
+.createAccountWrapper .checkbox label {
+    padding-left: 22px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.createAccountWrapper .checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.createAccountWrapper .checkbox input:checked~.checkmark:after {
+    display: block;
+}
+
+.createAccountWrapper .checkmark {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 12px;
+    width: 13px;
+    border-radius: 2px;
+    background-color: #ebebeb;
+    border: 1px solid #ccc;
+    font-family: Material-Design-Iconic-Font;
+    color: #000;
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+.createAccountWrapper .checkmark:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    content: '\f26b';
+}
+
+/* Chrome, Safari, Edge, Opera */
+.createAccountWrapper input::-webkit-outer-spin-button,
+.createAccountWrapper input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.createAccountWrapper input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+
+@media (min-width: 1000px) {
+    .createAccountWrapper form {
+        width: 85%;
+        height: 97%;
+        padding: 20px 20px 15px 20px;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .createAccountWrapper .Contact-Wrapper {
+        min-width: 768px;
+    }
+
+    .createAccountWrapper .checkmark {
+        top: 35%;
+    }
+
+    .createAccountWrapper .form {
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .createAccountWrapper .Contact-Wrapper {
+        min-width: auto;
+        background: none;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .createAccountWrapper form {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        box-shadow: none;
+    }
+
+    .createAccountWrapper .checkmark {
+        top: 35%;
+    }
+}

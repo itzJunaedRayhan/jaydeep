@@ -1,0 +1,42 @@
+
+.add-review h1{
+    padding: 20px;
+    color: black;
+}
+.add-review form{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.add-review form input{
+    padding: 25px 10px;
+}
+.add-review textarea{
+    max-height: 150px !important;
+    width: 100%;
+}
+::placeholder{
+    color: #817c78 !important;
+    font-size: 12px;
+}
+
+.submit-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.submitBtn{
+    background-color: #ff6600;
+    max-width: 200px;
+    border: 3px solid #ff6600;
+    border-radius: 20px;
+    color: white !important;
+    padding: 5px 5px 7px 15px;
+    transition: all 0.8s ease;
+    font-size: 16px;
+    font-weight: bold;
+}
+.submitBtn:hover{
+    border: 3px solid #ff6600;
+    background-color: transparent;
+    color: #ff6600 !important;
+}
